@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>editor-lab · 零依赖编辑器内核</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  html, body { margin: 0; height: 100%; background: #181825; color: #cdd6f4;
+    font-family: ui-monospace, Consolas, monospace; }
+  #bar { display: flex; gap: 16px; align-items: center; padding: 6px 12px;
+    background: #11111b; font-size: 13px; border-bottom: 1px solid #313244; }
+  #title { color: #89b4fa; font-weight: bold; white-space: nowrap; }
+  #mode { padding: 1px 10px; border-radius: 4px; background: #45475a; }
+  #mode.normal { background: #a6e3a1; color: #11111b; }
+  #mode.insert { background: #89b4fa; color: #11111b; }
+  #mode.visual { background: #f9e2af; color: #11111b; }
+  #mode.edit { background: #45475a; color: #cdd6f4; }
+  #pending { color: #f5c2e7; min-width: 40px; }
+  #pos, #stat { color: #9399b2; margin-left: auto; }
+  #hint { color: #6c7086; font-size: 12px; }
+  #editor { display: block; width: 100vw; height: calc(100vh - 37px);
+    outline: none; cursor: text; }
+</style>
+</head>
+<body>
+<div id="bar">
+  <span id="title">editor-lab</span>
+  <span id="mode">EDIT</span>
+  <span id="pending"></span>
+  <label><input type="checkbox" id="vim-toggle"> vim 模式</label>
+  <span id="hint">Alt+点击=多光标 · Shift+点击=扩展选区 · Ctrl+Z/Y=undo/redo · vim 下 hjkl/w/b/e/0/$/gg/G/dd/yy/p/x/r/u</span>
+  <span id="pos"></span>
+  <span id="stat"></span>
+</div>
+<canvas id="editor" tabindex="0"></canvas>
+<script>/*__BUNDLE__*/</script>
+</body>
+</html>

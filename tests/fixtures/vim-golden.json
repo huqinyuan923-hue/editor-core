@@ -1,0 +1,1222 @@
+[
+  {
+    "name": "d3w_词首",
+    "init": [
+      "foo bar baz qux"
+    ],
+    "cursor": [
+      1,
+      1
+    ],
+    "keys": "d3w",
+    "outLines": [
+      "qux"
+    ],
+    "outCursor": [
+      1,
+      1
+    ]
+  },
+  {
+    "name": "dw_词中",
+    "init": [
+      "foo bar baz qux"
+    ],
+    "cursor": [
+      1,
+      5
+    ],
+    "keys": "dw",
+    "outLines": [
+      "foo baz qux"
+    ],
+    "outCursor": [
+      1,
+      5
+    ]
+  },
+  {
+    "name": "3dw_计数前",
+    "init": [
+      "foo bar baz qux"
+    ],
+    "cursor": [
+      1,
+      1
+    ],
+    "keys": "3dw",
+    "outLines": [
+      "qux"
+    ],
+    "outCursor": [
+      1,
+      1
+    ]
+  },
+  {
+    "name": "d2w_计数后",
+    "init": [
+      "foo bar baz qux"
+    ],
+    "cursor": [
+      1,
+      1
+    ],
+    "keys": "d2w",
+    "outLines": [
+      "baz qux"
+    ],
+    "outCursor": [
+      1,
+      1
+    ]
+  },
+  {
+    "name": "de_词尾含",
+    "init": [
+      "foo bar baz qux"
+    ],
+    "cursor": [
+      1,
+      7
+    ],
+    "keys": "de",
+    "outLines": [
+      "foo ba qux"
+    ],
+    "outCursor": [
+      1,
+      7
+    ]
+  },
+  {
+    "name": "db_反向",
+    "init": [
+      "foo bar baz qux"
+    ],
+    "cursor": [
+      1,
+      9
+    ],
+    "keys": "db",
+    "outLines": [
+      "foo baz qux"
+    ],
+    "outCursor": [
+      1,
+      5
+    ]
+  },
+  {
+    "name": "d$_到行尾",
+    "init": [
+      "foo bar baz qux"
+    ],
+    "cursor": [
+      1,
+      5
+    ],
+    "keys": "d$",
+    "outLines": [
+      "foo "
+    ],
+    "outCursor": [
+      1,
+      4
+    ]
+  },
+  {
+    "name": "d0_到行首",
+    "init": [
+      "alpha beta",
+      "gamma delta",
+      "epsilon"
+    ],
+    "cursor": [
+      2,
+      3
+    ],
+    "keys": "d0",
+    "outLines": [
+      "alpha beta",
+      "mma delta",
+      "epsilon"
+    ],
+    "outCursor": [
+      2,
+      1
+    ]
+  },
+  {
+    "name": "dw_末词行尾特判",
+    "init": [
+      "foo bar baz qux"
+    ],
+    "cursor": [
+      1,
+      13
+    ],
+    "keys": "dw",
+    "outLines": [
+      "foo bar baz "
+    ],
+    "outCursor": [
+      1,
+      12
+    ]
+  },
+  {
+    "name": "dw_跨行合并",
+    "init": [
+      "foo",
+      "bar"
+    ],
+    "cursor": [
+      1,
+      1
+    ],
+    "keys": "dw",
+    "outLines": [
+      "",
+      "bar"
+    ],
+    "outCursor": [
+      1,
+      1
+    ]
+  },
+  {
+    "name": "2dd",
+    "init": [
+      "alpha beta",
+      "gamma delta",
+      "epsilon"
+    ],
+    "cursor": [
+      2,
+      1
+    ],
+    "keys": "2dd",
+    "outLines": [
+      "alpha beta"
+    ],
+    "outCursor": [
+      1,
+      1
+    ]
+  },
+  {
+    "name": "dd",
+    "init": [
+      "one",
+      "two",
+      "three",
+      "four",
+      "five"
+    ],
+    "cursor": [
+      2,
+      1
+    ],
+    "keys": "dd",
+    "outLines": [
+      "one",
+      "three",
+      "four",
+      "five"
+    ],
+    "outCursor": [
+      2,
+      1
+    ]
+  },
+  {
+    "name": "3dd",
+    "init": [
+      "one",
+      "two",
+      "three",
+      "four",
+      "five"
+    ],
+    "cursor": [
+      2,
+      1
+    ],
+    "keys": "3dd",
+    "outLines": [
+      "one",
+      "five"
+    ],
+    "outCursor": [
+      2,
+      1
+    ]
+  },
+  {
+    "name": "ddp_下移",
+    "init": [
+      "one",
+      "two",
+      "three",
+      "four",
+      "five"
+    ],
+    "cursor": [
+      2,
+      1
+    ],
+    "keys": "ddp",
+    "outLines": [
+      "one",
+      "three",
+      "two",
+      "four",
+      "five"
+    ],
+    "outCursor": [
+      3,
+      1
+    ]
+  },
+  {
+    "name": "yyjp_复制粘贴",
+    "init": [
+      "one",
+      "two",
+      "three",
+      "four",
+      "five"
+    ],
+    "cursor": [
+      1,
+      1
+    ],
+    "keys": "yyjp",
+    "outLines": [
+      "one",
+      "two",
+      "one",
+      "three",
+      "four",
+      "five"
+    ],
+    "outCursor": [
+      3,
+      1
+    ]
+  },
+  {
+    "name": "yyp_复制一行",
+    "init": [
+      "one",
+      "two",
+      "three",
+      "four",
+      "five"
+    ],
+    "cursor": [
+      1,
+      1
+    ],
+    "keys": "yyp",
+    "outLines": [
+      "one",
+      "one",
+      "two",
+      "three",
+      "four",
+      "five"
+    ],
+    "outCursor": [
+      2,
+      1
+    ]
+  },
+  {
+    "name": "2yyp",
+    "init": [
+      "one",
+      "two",
+      "three",
+      "four",
+      "five"
+    ],
+    "cursor": [
+      1,
+      1
+    ],
+    "keys": "2yyp",
+    "outLines": [
+      "one",
+      "one",
+      "two",
+      "two",
+      "three",
+      "four",
+      "five"
+    ],
+    "outCursor": [
+      2,
+      1
+    ]
+  },
+  {
+    "name": "x",
+    "init": [
+      "foo bar baz qux"
+    ],
+    "cursor": [
+      1,
+      2
+    ],
+    "keys": "x",
+    "outLines": [
+      "fo bar baz qux"
+    ],
+    "outCursor": [
+      1,
+      2
+    ]
+  },
+  {
+    "name": "3x",
+    "init": [
+      "foo bar baz qux"
+    ],
+    "cursor": [
+      1,
+      1
+    ],
+    "keys": "3x",
+    "outLines": [
+      " bar baz qux"
+    ],
+    "outCursor": [
+      1,
+      1
+    ]
+  },
+  {
+    "name": "x_行尾",
+    "init": [
+      "foo bar baz qux"
+    ],
+    "cursor": [
+      1,
+      15
+    ],
+    "keys": "x",
+    "outLines": [
+      "foo bar baz qu"
+    ],
+    "outCursor": [
+      1,
+      14
+    ]
+  },
+  {
+    "name": "xp_交换字符",
+    "init": [
+      "foo bar baz qux"
+    ],
+    "cursor": [
+      1,
+      1
+    ],
+    "keys": "xp",
+    "outLines": [
+      "ofo bar baz qux"
+    ],
+    "outCursor": [
+      1,
+      2
+    ]
+  },
+  {
+    "name": "rx_替换",
+    "init": [
+      "foo bar baz qux"
+    ],
+    "cursor": [
+      1,
+      1
+    ],
+    "keys": "rx",
+    "outLines": [
+      "xoo bar baz qux"
+    ],
+    "outCursor": [
+      1,
+      1
+    ]
+  },
+  {
+    "name": "3ro_计数替换",
+    "init": [
+      "foo bar baz qux"
+    ],
+    "cursor": [
+      1,
+      1
+    ],
+    "keys": "3ro",
+    "outLines": [
+      "ooo bar baz qux"
+    ],
+    "outCursor": [
+      1,
+      3
+    ]
+  },
+  {
+    "name": "w",
+    "init": [
+      "foo bar baz qux"
+    ],
+    "cursor": [
+      1,
+      1
+    ],
+    "keys": "w",
+    "outLines": [
+      "foo bar baz qux"
+    ],
+    "outCursor": [
+      1,
+      5
+    ]
+  },
+  {
+    "name": "3w",
+    "init": [
+      "foo bar baz qux"
+    ],
+    "cursor": [
+      1,
+      1
+    ],
+    "keys": "3w",
+    "outLines": [
+      "foo bar baz qux"
+    ],
+    "outCursor": [
+      1,
+      13
+    ]
+  },
+  {
+    "name": "w_跨行",
+    "init": [
+      "alpha beta",
+      "gamma delta",
+      "epsilon"
+    ],
+    "cursor": [
+      1,
+      7
+    ],
+    "keys": "w",
+    "outLines": [
+      "alpha beta",
+      "gamma delta",
+      "epsilon"
+    ],
+    "outCursor": [
+      2,
+      1
+    ]
+  },
+  {
+    "name": "b_跨行回退",
+    "init": [
+      "alpha beta",
+      "gamma delta",
+      "epsilon"
+    ],
+    "cursor": [
+      2,
+      1
+    ],
+    "keys": "b",
+    "outLines": [
+      "alpha beta",
+      "gamma delta",
+      "epsilon"
+    ],
+    "outCursor": [
+      1,
+      7
+    ]
+  },
+  {
+    "name": "e",
+    "init": [
+      "foo bar baz qux"
+    ],
+    "cursor": [
+      1,
+      1
+    ],
+    "keys": "e",
+    "outLines": [
+      "foo bar baz qux"
+    ],
+    "outCursor": [
+      1,
+      3
+    ]
+  },
+  {
+    "name": "2e",
+    "init": [
+      "foo bar baz qux"
+    ],
+    "cursor": [
+      1,
+      1
+    ],
+    "keys": "2e",
+    "outLines": [
+      "foo bar baz qux"
+    ],
+    "outCursor": [
+      1,
+      7
+    ]
+  },
+  {
+    "name": "$",
+    "init": [
+      "alpha beta",
+      "gamma delta",
+      "epsilon"
+    ],
+    "cursor": [
+      1,
+      5
+    ],
+    "keys": "$",
+    "outLines": [
+      "alpha beta",
+      "gamma delta",
+      "epsilon"
+    ],
+    "outCursor": [
+      1,
+      10
+    ]
+  },
+  {
+    "name": "0",
+    "init": [
+      "alpha beta",
+      "gamma delta",
+      "epsilon"
+    ],
+    "cursor": [
+      2,
+      5
+    ],
+    "keys": "0",
+    "outLines": [
+      "alpha beta",
+      "gamma delta",
+      "epsilon"
+    ],
+    "outCursor": [
+      2,
+      1
+    ]
+  },
+  {
+    "name": "G_末行",
+    "init": [
+      "one",
+      "two",
+      "three",
+      "four",
+      "five"
+    ],
+    "cursor": [
+      3,
+      1
+    ],
+    "keys": "G",
+    "outLines": [
+      "one",
+      "two",
+      "three",
+      "four",
+      "five"
+    ],
+    "outCursor": [
+      5,
+      1
+    ]
+  },
+  {
+    "name": "gg_首行",
+    "init": [
+      "one",
+      "two",
+      "three",
+      "four",
+      "five"
+    ],
+    "cursor": [
+      3,
+      2
+    ],
+    "keys": "gg",
+    "outLines": [
+      "one",
+      "two",
+      "three",
+      "four",
+      "five"
+    ],
+    "outCursor": [
+      1,
+      1
+    ]
+  },
+  {
+    "name": "3G_计数行",
+    "init": [
+      "one",
+      "two",
+      "three",
+      "four",
+      "five"
+    ],
+    "cursor": [
+      1,
+      1
+    ],
+    "keys": "3G",
+    "outLines": [
+      "one",
+      "two",
+      "three",
+      "four",
+      "five"
+    ],
+    "outCursor": [
+      3,
+      1
+    ]
+  },
+  {
+    "name": "jj_列记忆",
+    "init": [
+      "abcdef",
+      "xy",
+      "longer line"
+    ],
+    "cursor": [
+      1,
+      5
+    ],
+    "keys": "jj",
+    "outLines": [
+      "abcdef",
+      "xy",
+      "longer line"
+    ],
+    "outCursor": [
+      3,
+      5
+    ]
+  },
+  {
+    "name": "j_短行钳制",
+    "init": [
+      "abcdef",
+      "xy",
+      "longer line"
+    ],
+    "cursor": [
+      1,
+      5
+    ],
+    "keys": "j",
+    "outLines": [
+      "abcdef",
+      "xy",
+      "longer line"
+    ],
+    "outCursor": [
+      2,
+      2
+    ]
+  },
+  {
+    "name": "j_保列",
+    "init": [
+      "alpha beta",
+      "gamma delta",
+      "epsilon"
+    ],
+    "cursor": [
+      1,
+      3
+    ],
+    "keys": "j",
+    "outLines": [
+      "alpha beta",
+      "gamma delta",
+      "epsilon"
+    ],
+    "outCursor": [
+      2,
+      3
+    ]
+  },
+  {
+    "name": "v3wd_可视删除",
+    "init": [
+      "foo bar baz qux"
+    ],
+    "cursor": [
+      1,
+      1
+    ],
+    "keys": "v3wd",
+    "outLines": [
+      "ux"
+    ],
+    "outCursor": [
+      1,
+      1
+    ]
+  },
+  {
+    "name": "veyp_可视复制粘贴",
+    "init": [
+      "foo bar baz qux"
+    ],
+    "cursor": [
+      1,
+      5
+    ],
+    "keys": "veyp",
+    "outLines": [
+      "foo bbarar baz qux"
+    ],
+    "outCursor": [
+      1,
+      8
+    ]
+  },
+  {
+    "name": "vjd_可视跨行删除",
+    "init": [
+      "alpha beta",
+      "gamma delta",
+      "epsilon"
+    ],
+    "cursor": [
+      2,
+      1
+    ],
+    "keys": "vjd",
+    "outLines": [
+      "alpha beta",
+      "psilon"
+    ],
+    "outCursor": [
+      2,
+      1
+    ]
+  },
+  {
+    "name": "i_插入退出",
+    "init": [
+      "foo bar baz qux"
+    ],
+    "cursor": [
+      1,
+      1
+    ],
+    "keys": "iXY\\<Esc>",
+    "outLines": [
+      "XYfoo bar baz qux"
+    ],
+    "outCursor": [
+      1,
+      2
+    ]
+  },
+  {
+    "name": "a_后插",
+    "init": [
+      "foo bar baz qux"
+    ],
+    "cursor": [
+      1,
+      1
+    ],
+    "keys": "aXY\\<Esc>",
+    "outLines": [
+      "fXYoo bar baz qux"
+    ],
+    "outCursor": [
+      1,
+      3
+    ]
+  },
+  {
+    "name": "A_行尾插",
+    "init": [
+      "foo bar baz qux"
+    ],
+    "cursor": [
+      1,
+      1
+    ],
+    "keys": "A!?\\<Esc>",
+    "outLines": [
+      "foo bar baz qux!?"
+    ],
+    "outCursor": [
+      1,
+      17
+    ]
+  },
+  {
+    "name": "o_下开行",
+    "init": [
+      "alpha beta",
+      "gamma delta",
+      "epsilon"
+    ],
+    "cursor": [
+      1,
+      1
+    ],
+    "keys": "oNEW\\<Esc>",
+    "outLines": [
+      "alpha beta",
+      "NEW",
+      "gamma delta",
+      "epsilon"
+    ],
+    "outCursor": [
+      2,
+      3
+    ]
+  },
+  {
+    "name": "O_上开行",
+    "init": [
+      "alpha beta",
+      "gamma delta",
+      "epsilon"
+    ],
+    "cursor": [
+      2,
+      1
+    ],
+    "keys": "ONEW\\<Esc>",
+    "outLines": [
+      "alpha beta",
+      "NEW",
+      "gamma delta",
+      "epsilon"
+    ],
+    "outCursor": [
+      2,
+      3
+    ]
+  },
+  {
+    "name": "u_撤dd",
+    "init": [
+      "one",
+      "two",
+      "three",
+      "four",
+      "five"
+    ],
+    "cursor": [
+      2,
+      1
+    ],
+    "keys": "ddu",
+    "outLines": [
+      "one",
+      "two",
+      "three",
+      "four",
+      "five"
+    ],
+    "outCursor": [
+      2,
+      1
+    ]
+  },
+  {
+    "name": "u_撤x",
+    "init": [
+      "foo bar baz qux"
+    ],
+    "cursor": [
+      1,
+      2
+    ],
+    "keys": "xu",
+    "outLines": [
+      "foo bar baz qux"
+    ],
+    "outCursor": [
+      1,
+      2
+    ]
+  },
+  {
+    "name": "2dd_u",
+    "init": [
+      "alpha beta",
+      "gamma delta",
+      "epsilon"
+    ],
+    "cursor": [
+      2,
+      1
+    ],
+    "keys": "2ddu",
+    "outLines": [
+      "alpha beta",
+      "gamma delta",
+      "epsilon"
+    ],
+    "outCursor": [
+      2,
+      1
+    ]
+  },
+  {
+    "name": "d2e",
+    "init": [
+      "foo bar baz qux"
+    ],
+    "cursor": [
+      1,
+      1
+    ],
+    "keys": "d2e",
+    "outLines": [
+      " baz qux"
+    ],
+    "outCursor": [
+      1,
+      1
+    ]
+  },
+  {
+    "name": "d2w_行级升级",
+    "init": [
+      "foo",
+      "bar"
+    ],
+    "cursor": [
+      1,
+      1
+    ],
+    "keys": "d2w",
+    "outLines": [
+      ""
+    ],
+    "outCursor": [
+      1,
+      1
+    ]
+  },
+  {
+    "name": "2dw_行级升级",
+    "init": [
+      "foo",
+      "bar"
+    ],
+    "cursor": [
+      1,
+      1
+    ],
+    "keys": "2dw",
+    "outLines": [
+      ""
+    ],
+    "outCursor": [
+      1,
+      1
+    ]
+  },
+  {
+    "name": "d1w_行尾回退",
+    "init": [
+      "foo",
+      "bar"
+    ],
+    "cursor": [
+      1,
+      1
+    ],
+    "keys": "d1w",
+    "outLines": [
+      "",
+      "bar"
+    ],
+    "outCursor": [
+      1,
+      1
+    ]
+  },
+  {
+    "name": "d2w_起点非行首",
+    "init": [
+      "foo",
+      "bar"
+    ],
+    "cursor": [
+      1,
+      3
+    ],
+    "keys": "d2w",
+    "outLines": [
+      "fo"
+    ],
+    "outCursor": [
+      1,
+      2
+    ]
+  },
+  {
+    "name": "d2w_跨行词内目标",
+    "init": [
+      "foo",
+      "bar"
+    ],
+    "cursor": [
+      1,
+      1
+    ],
+    "keys": "d3w",
+    "outLines": [
+      ""
+    ],
+    "outCursor": [
+      1,
+      1
+    ]
+  },
+  {
+    "name": "d2j_计数不可达",
+    "init": [
+      "one",
+      "two",
+      "three"
+    ],
+    "cursor": [
+      2,
+      1
+    ],
+    "keys": "d2j",
+    "outLines": [
+      "one",
+      "two",
+      "three"
+    ],
+    "outCursor": [
+      2,
+      1
+    ]
+  },
+  {
+    "name": "2j_计数不可达",
+    "init": [
+      "one",
+      "two",
+      "three"
+    ],
+    "cursor": [
+      2,
+      1
+    ],
+    "keys": "2j",
+    "outLines": [
+      "one",
+      "two",
+      "three"
+    ],
+    "outCursor": [
+      2,
+      1
+    ]
+  },
+  {
+    "name": "j_计数可达",
+    "init": [
+      "one",
+      "two",
+      "three",
+      "four",
+      "five"
+    ],
+    "cursor": [
+      1,
+      1
+    ],
+    "keys": "2j",
+    "outLines": [
+      "one",
+      "two",
+      "three",
+      "four",
+      "five"
+    ],
+    "outCursor": [
+      3,
+      1
+    ]
+  },
+  {
+    "name": "dw_末行词",
+    "init": [
+      "foo",
+      "bar"
+    ],
+    "cursor": [
+      2,
+      1
+    ],
+    "keys": "dw",
+    "outLines": [
+      "foo",
+      ""
+    ],
+    "outCursor": [
+      2,
+      1
+    ]
+  },
+  {
+    "name": "d2w_起点非行首_跨行",
+    "init": [
+      "foo bar",
+      "baz"
+    ],
+    "cursor": [
+      1,
+      5
+    ],
+    "keys": "d2w",
+    "outLines": [
+      "foo "
+    ],
+    "outCursor": [
+      1,
+      4
+    ]
+  }
+]
